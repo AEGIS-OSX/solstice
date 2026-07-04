@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { ProjectImage } from "@/app/components/ProjectImage";
+import ProjectImage from "@/app/components/ProjectImage";
 
 interface CollectionCard {
   id: "dawn" | "meridian" | "dusk";
@@ -79,6 +79,7 @@ export default function Collections() {
                 <ProjectImage
                   id={card.id}
                   className="card-image"
+                  alt={`${card.title} collection`}
                 />
               </div>
               <div className="card-body">
