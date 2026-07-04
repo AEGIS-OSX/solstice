@@ -39,6 +39,7 @@
   --space-xl: 3rem;
   --space-2xl: 4rem;
   --space-3xl: 5rem;
+  --space-4xl: 6rem;
   --space-section: 7.5rem;
 
   /* Motion tokens */
@@ -259,5 +260,81 @@ h1, h2, h3, h4, h5, h6 {
 
   .hero-image-wrap {
     aspect-ratio: 4 / 3;
+  }
+}
+
+/* ─── Philosophy Section ────────────────────────────────────────────────────── */
+
+.philosophy-section {
+  background-color: var(--color-surface);
+  padding-block: var(--space-section);
+}
+
+.philosophy-ritual-inner {
+  max-width: 90rem;
+  margin-inline: auto;
+  padding-inline: var(--space-l);
+}
+
+.philosophy-heading {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  margin: 0 0 var(--space-l);
+  max-width: 40rem;
+}
+
+.philosophy-body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.7;
+  color: var(--color-text);
+  max-width: 52ch;
+}
+
+.philosophy-process-inner {
+  max-width: 90rem;
+  margin-inline: auto;
+  padding-inline: var(--space-l);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2xl);
+  margin-top: var(--space-4xl);
+}
+
+.process-step {
+  text-align: left;
+}
+
+.process-rule {
+  height: 1px;
+  background-color: var(--color-border);
+  width: 100%;
+}
+
+.process-title {
+  font-family: var(--font-display);
+  font-size: var(--text-h3);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.2;
+  color: var(--color-text);
+  margin: var(--space-s) 0 var(--space-xs);
+}
+
+.process-body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.7;
+  color: var(--color-muted);
+}
+
+@media (max-width: 768px) {
+  .philosophy-process-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
   }
 }
