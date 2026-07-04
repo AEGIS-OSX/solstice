@@ -423,3 +423,84 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
   }
 }
+
+/* --- Waitlist Section ----------------------------------------------------- */
+
+.waitlist-section {
+  background-color: var(--color-surface);
+  padding-block: var(--space-section);
+}
+
+.waitlist-inner {
+  max-width: 36rem;
+  margin-inline: auto;
+  padding-inline: var(--space-l);
+  text-align: center;
+}
+
+.waitlist-heading {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  margin: 0 0 var(--space-m);
+}
+
+.waitlist-sub {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.7;
+  color: var(--color-muted);
+  margin: 0 0 var(--space-2xl);
+}
+
+.waitlist-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  align-items: center;
+}
+
+.waitlist-input {
+  width: 100%;
+  max-width: 24rem;
+  padding: var(--space-s) var(--space-m);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  outline: none;
+}
+
+.waitlist-input::placeholder {
+  color: var(--color-muted);
+}
+
+.waitlist-input:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.waitlist-btn {
+  width: 100%;
+  max-width: 24rem;
+}
+
+.waitlist-error {
+  color: var(--color-accent);
+  font-size: var(--text-small);
+  margin-top: var(--space-xs);
+}
+
+.waitlist-success {
+  font-family: var(--font-display);
+  font-size: var(--text-h3);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--color-text);
+  margin-top: var(--space-l);
+}
