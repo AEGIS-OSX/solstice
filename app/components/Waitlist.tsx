@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, FormEvent, ChangeEvent } from "react";
 import { motion } from "framer-motion";
 
 type Status = "idle" | "loading" | "success" | "error";
@@ -8,7 +8,7 @@ export default function Waitlist() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     if (!email || !email.includes("@")) {
@@ -62,7 +62,7 @@ export default function Waitlist() {
               className="waitlist-input"
               placeholder="Your email address"
               value={email}
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
                 setEmail(e.target.value)
               }
               required
