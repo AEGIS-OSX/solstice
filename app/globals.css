@@ -51,6 +51,9 @@
 
   /* Border radius */
   --radius: 2px;
+
+  /* Accent hover (darkened terracotta) */
+  --color-accent-hover: #6E3820;
 }
 
 /* Base reset */
@@ -121,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover {
-  background-color: #6E3820;
+  background-color: var(--color-accent-hover);
 }
 
 .btn-primary:focus-visible {
