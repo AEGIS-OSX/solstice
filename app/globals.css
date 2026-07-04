@@ -270,6 +270,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-block: var(--space-section);
 }
 
+.philosophy-ritual {
+  /* Wrapper: no border, no shadow, no divider per spec. Layout handled by inner. */
+}
+
 .philosophy-ritual-inner {
   max-width: 90rem;
   margin-inline: auto;
@@ -293,6 +297,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
   color: var(--color-text);
   max-width: 52ch;
+}
+
+.philosophy-process {
+  /* Wrapper: no border, no shadow, no divider per spec. Layout handled by inner. */
 }
 
 .philosophy-process-inner {
