@@ -15,11 +15,10 @@ export default function FounderStory() {
           transition={{ duration: 0.5, ease: [0.33, 1, 0.68, 1] }}
         >
           <blockquote className="founder-quote">
-            <p>"I started pouring candles because I needed to slow down. I did not expect it to become a studio."</p>
-            <cite>— Founder, Solstice</cite>
+            <p>&#8220;I started Solstice in a home kitchen because I couldn&#8217;t find a candle that respected the silence of a room.&#8221;</p>
+            <cite>&#8212; Mara Ellison, Founder</cite>
           </blockquote>
-          <p className="founder-body">Solstice began in a kitchen in 2021. I was a product designer by trade, and I had spent years optimizing for speed. One winter, I started pouring candles as a way to do something with my hands that could not be rushed. The first batch was terrible. The second was worse. By the third, I understood why patience is an ingredient.</p>
-          <p className="founder-body">Every candle we make is still poured by hand, in small batches, in the same studio where I made that first terrible batch. We are not trying to scale. We are trying to get better.</p>
+          <p className="founder-body">Solstice began with an obsession. I spent a year testing wicks and wax blends, looking for a burn that felt as intentional as the objects we choose to keep in our homes. What started as a personal ritual in my kitchen became a studio dedicated to the slow way of making things. We stay small because craft requires a human eye. Every vessel that leaves our studio has been held, inspected, and approved by a person, not a machine.</p>
         </motion.div>
         <motion.div
           className="founder-image-wrap"
