@@ -1,37 +1,37 @@
 {
   "logo": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/solstice/cleo/1783194971458-logo.png",
+    "alt": "A minimalist geometric logo mark and wordmark for Solstice. The design features a stylized sun at the horizon line in deep umber and terracotta, set against a warm parchment background to reflect the ",
     "width": 1024,
     "height": 1024
   },
   "hero": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/solstice/cleo/1783194822827-hero.png",
+    "alt": "A minimalist hero image featuring a matte ceramic vessel on linen, capturing the 'quiet but confident' brand essence through soft morning light and a muted parchment palette.",
     "width": 1920,
     "height": 1080
   },
   "feature_1": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/solstice/cleo/1783194821230-feature_1.png",
+    "alt": "A tactile, editorial close-up of a ceramic candle vessel and raw materials (soy wax, cotton wicks) in soft daylight. The image establishes the 'How it's made' narrative through a quiet, craft-focused ",
     "width": 800,
     "height": 600
   },
   "feature_2": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/solstice/cleo/1783194838966-feature_2.png",
+    "alt": "A tactile, close-up shot of a ceramic candle vessel and raw ingredients in soft morning light, emphasizing the 'Dawn' collection's bright but quiet aesthetic and the brand's focus on slow craft.",
     "width": 800,
     "height": 600
   },
   "feature_3": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/solstice/cleo/1783194821507-feature_3.png",
+    "alt": "A tactile, close-up shot of a hand-poured candle in a matte ceramic vessel, emphasizing the 'Dusk' collection's deep umber tones and the studio's quiet, unhurried craft. The natural side-lighting and ",
     "width": 800,
     "height": 600
   },
   "social_proof": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/solstice/cleo/1783195074387-social_proof.png",
+    "alt": "A tactile, editorial close-up of a ceramic candle vessel in a soft-lit studio. The image captures the 'quiet but confident' brand personality through natural 5600K lighting and a muted parchment palet",
     "width": 1200,
     "height": 800
   }
