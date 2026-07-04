@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-/* ─── Hero Section ─────────────────────────────────────────────────────────── */
+/* --- Hero Section --------------------------------------------------------- */
 
 .hero-section {
   background-color: var(--color-bg);
@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* ─── Philosophy Section ────────────────────────────────────────────────────── */
+/* --- Philosophy Section --------------------------------------------------- */
 
 .philosophy-section {
   background-color: var(--color-surface);
