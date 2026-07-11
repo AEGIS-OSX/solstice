@@ -1,0 +1,51 @@
+# Garrison build-gate: enforces gitleaks secret scan before every deploy.
+# A failed or missing scan blocks the deploy — there is no silent-skip path.
+name: build-gate
+
+on:
+  push:
+    branches: [main, 'release/**']
+  pull_request:
+    branches: [main]
+
+jobs:
+  gitleaks-scan:
+    name: Secret scan (gitleaks)
+    runs-on: ubuntu-latest
+    # Fail fast: if this job fails, downstream deploy jobs must not run.
+    # Downstream jobs should declare: needs: [gitleaks-scan]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history for git-log scan
+
+      - name: Install gitleaks
+        run: |
+          set -euo pipefail
+          GITLEAKS_VERSION="8.18.4"
+          ARCHIVE="gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          URL="https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/${ARCHIVE}"
+          echo "Downloading gitleaks v${GITLEAKS_VERSION}..."
+          wget -q "${URL}" -O /tmp/gitleaks.tar.gz
+          tar -xzf /tmp/gitleaks.tar.gz -C /tmp gitleaks
+          sudo mv /tmp/gitleaks /usr/local/bin/gitleaks
+          sudo chmod +x /usr/local/bin/gitleaks
+          gitleaks version
+
+      - name: Run build-gate
+        id: build_gate
+        run: node scripts/build-gate.js
+        env:
+          REPO_ROOT: ${{ github.workspace }}
+        # The script exits non-zero on any failure; GitHub Actions will mark
+        # this step (and the job) as failed, blocking any downstream deploy.
+
+  # Example downstream job — uncomment and adapt for your deploy step.
+  # deploy:
+  #   name: Deploy
+  #   needs: [gitleaks-scan]   # <-- hard dependency; deploy never runs if scan fails
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - run: echo "Deploying..."
