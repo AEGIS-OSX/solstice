@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:gate": "node scripts/build-gate.js",
     "start": "next start",
     "lint": "next lint"
   },
